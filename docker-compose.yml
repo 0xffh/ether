@@ -6,4 +6,5 @@ services:
     working_dir: '/usr/src'
     volumes:
       - './src:/usr/src'
-    entrypoint: /usr/src/entrypoint.sh
+      - './entrypoint.sh:/usr/entrypoint.sh'
+    entrypoint: /usr/entrypoint.sh

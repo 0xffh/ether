@@ -1,0 +1,9 @@
+version: '2'
+services:
+  solidity:
+    image: ethereum/solc:stable
+    container_name: ${PROJECT_NAME}-solidity
+    working_dir: '/usr/src'
+    volumes:
+      - './src:/usr/src'
+    entrypoint: /usr/src/entrypoint.sh
